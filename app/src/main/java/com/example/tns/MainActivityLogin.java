@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class MainActivityLogin extends AppCompatActivity {
 
-    EditText edtEmail, edtSenha;
+    EditText edtEmailLogin, edtSenhaLogin;
     Button btnLogin;
 
     @Override
@@ -18,8 +18,8 @@ public class MainActivityLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_login);
 
-        edtEmail = (EditText) findViewById(R.id.txtEmail);
-        edtSenha = (EditText) findViewById(R.id.txtSenha);
+        edtEmailLogin = (EditText) findViewById(R.id.txtEmailLogin);
+        edtSenhaLogin = (EditText) findViewById(R.id.txtSenhaLogin);
         btnLogin = (Button) findViewById(R.id.btnLoginL);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -27,8 +27,8 @@ public class MainActivityLogin extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivityLogin.this, MainActivity.class);
                 Usuario usuario = new Usuario();
-                usuario.setNome(edtEmail.getText().toString());
-                usuario.setSenha(edtSenha.getText().toString());
+                usuario.setNomeUsuario(edtEmailLogin.getText().toString());
+                usuario.setSenha(edtSenhaLogin.getInputType());
                 //intent.putExtra("objetoAutenticacao", usuario);
                 startActivity(intent);
             }

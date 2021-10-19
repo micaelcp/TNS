@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtNome"
+        android:id="@+id/txtNomeNovoU"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/txtCadastroEmail"
+        android:id="@+id/txtEmailNovoU"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -42,10 +42,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+        app:layout_constraintTop_toBottomOf="@+id/txtNomeNovoU" />
 
     <Button
-        android:id="@+id/btnConfirmar"
+        android:id="@+id/btnCadastrarNovoU"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -56,10 +56,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtConfirmarSenha" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/txtSenhaNovoU"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -68,10 +68,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCadastroEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailNovoU" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/txtConfirmarSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -80,7 +80,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSenhaNovoU" />
 
     <TextView
         android:id="@+id/textView11"
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:text="Nome"
         android:textSize="16sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtNome"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtNomeNovoU"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent" />
@@ -99,7 +99,7 @@
         android:layout_height="wrap_content"
         android:text="Email"
         android:textSize="16sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/txtCadastroEmail"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtEmailNovoU"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent" />
@@ -110,7 +110,7 @@
         android:layout_height="wrap_content"
         android:text="Senha"
         android:textSize="16sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPassword2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtSenhaNovoU"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.127"
         app:layout_constraintStart_toStartOf="parent" />
@@ -121,7 +121,7 @@
         android:layout_height="wrap_content"
         android:text="Confirme a senha"
         android:textSize="16sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPassword3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtConfirmarSenha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.16"
         app:layout_constraintStart_toStartOf="parent" />

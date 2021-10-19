@@ -4,26 +4,48 @@ import java.io.Serializable;
 
 public class Usuario implements Serializable {
 
-    private String nome;
-    private String senha;
+    public String getNomeUsuario() {
+        return nomeUsuario;
+    }
+
+    public void setNomeUsuario(String nomeUsuario) {
+        this.nomeUsuario = nomeUsuario;
+    }
+
+    public String getEmialUsuario() {
+        return emialUsuario;
+    }
+
+    public void setEmialUsuario(String emialUsuario) {
+        this.emialUsuario = emialUsuario;
+    }
+
+    public Integer getSenha() {
+        return senha;
+    }
+
+    public void setSenha(Integer senha) {
+        this.senha = senha;
+    }
+
+    public Integer getConfirmarSenha() {
+        return confirmarSenha;
+    }
+
+    public void setConfirmarSenha(Integer confirmarSenha) {
+        this.confirmarSenha = confirmarSenha;
+    }
+
+    private String nomeUsuario;
+    private String emialUsuario;
+    private Integer senha;
+    private Integer confirmarSenha;
+
+
 
     public Usuario(){
 
     }
 
-    public String getNome() {
-        return nome;
-    }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getSenha() {
-        return senha;
-    }
-
-    public void setSenha(String senha) {
-        this.senha = senha;
-    }
 }
