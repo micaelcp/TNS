@@ -15,12 +15,12 @@ public class Reserva extends Usuario {
     }
 
     @Override
-    public String getNome() {
-        return super.getNome();
+    public String getNomeUsuario() {
+        return super.getNomeUsuario();
     }
 
     @Override
-    public String getSenha() {
+    public Integer getSenha() {
         return super.getSenha();
     }
 }

@@ -4,6 +4,11 @@ import java.io.Serializable;
 
 public class Usuario implements Serializable {
 
+    private String nomeUsuario;
+    private String emailUsuario;
+    private Integer senha;
+    private Integer confirmarSenha;
+
     public String getNomeUsuario() {
         return nomeUsuario;
     }
@@ -13,11 +18,11 @@ public class Usuario implements Serializable {
     }
 
     public String getEmialUsuario() {
-        return emialUsuario;
+        return emailUsuario;
     }
 
     public void setEmialUsuario(String emialUsuario) {
-        this.emialUsuario = emialUsuario;
+        this.emailUsuario = emialUsuario;
     }
 
     public Integer getSenha() {
@@ -35,13 +40,6 @@ public class Usuario implements Serializable {
     public void setConfirmarSenha(Integer confirmarSenha) {
         this.confirmarSenha = confirmarSenha;
     }
-
-    private String nomeUsuario;
-    private String emialUsuario;
-    private Integer senha;
-    private Integer confirmarSenha;
-
-
 
     public Usuario(){
 
