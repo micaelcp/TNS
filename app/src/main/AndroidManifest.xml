@@ -10,18 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TNS">
         <activity
-            android:name=".MainActivityCadastrar"
-            android:exported="true" >
+            android:name=".ActivityAdmPage"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityLoginAdm"
+            android:exported="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivityLogin" />
+        </activity>
+        <activity
+            android:name=".ActivityCadastrarProduto"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityCadastrar"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".MainActivityLogin"
-            android:exported="true" >
+            android:exported="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".MainActivity"
