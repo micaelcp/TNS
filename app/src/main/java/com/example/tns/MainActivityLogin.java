@@ -26,7 +26,7 @@ public class MainActivityLogin extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivityLogin.this, MainActivity.class);
+                Intent intent = new Intent(MainActivityLogin.this, ActivityVitrine.class);
                 Usuario usuario = new Usuario();
                 usuario.setNomeUsuario(edtEmailLogin.getText().toString());
                 usuario.setSenha(edtSenhaLogin.getInputType());
@@ -38,7 +38,7 @@ public class MainActivityLogin extends AppCompatActivity {
         btnAdm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivityLogin.this, ActivityCadastrarProduto.class);
+                Intent intent = new Intent(MainActivityLogin.this, ActivityAdmPage.class);
                 startActivity(intent);
             }
         });

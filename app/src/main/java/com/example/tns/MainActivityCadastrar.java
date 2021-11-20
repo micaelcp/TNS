@@ -3,6 +3,7 @@ package com.example.tns;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -29,6 +30,7 @@ public class MainActivityCadastrar extends AppCompatActivity {
         btnCadastrarNovoU.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(MainActivityCadastrar.this, ActivityVitrine.class);
                 Usuario usuario = new Usuario();
                 usuario.setNomeUsuario(edtNomeNovoU.getText().toString());
                 usuario.setEmialUsuario(edtEmailNovoU.getText().toString());

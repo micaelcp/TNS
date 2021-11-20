@@ -10,8 +10,40 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TNS">
         <activity
+            android:name=".CRUDP.ActivityPesquisarProduto"
+            android:exported="false" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityAdmPage" />
+        </activity>
+        <activity
+            android:name=".CRUDP.ActivityExcluirProduto"
+            android:exported="false" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityAdmPage" />
+        </activity>
+        <activity
+            android:name=".CRUDP.ActivityAtualizarProduto"
+            android:exported="false" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityAdmPage" />
+        </activity>
+        <activity
+            android:name=".ActivityVitrine"
+            android:exported="true" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityAdmPage" />
+        </activity>
+        <activity
             android:name=".ActivityAdmPage"
-            android:exported="false" />
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivityLogin" />
+        </activity>
         <activity
             android:name=".ActivityLoginAdm"
             android:exported="true">
@@ -20,8 +52,12 @@
                 android:value=".MainActivityLogin" />
         </activity>
         <activity
-            android:name=".ActivityCadastrarProduto"
-            android:exported="false" />
+            android:name=".CRUDP.ActivityCadastrarProduto"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityAdmPage" />
+        </activity>
         <activity
             android:name=".MainActivityCadastrar"
             android:exported="true">
